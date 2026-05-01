@@ -1,0 +1,22 @@
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
+
+[general]
+import = ["~/.config/alacritty/themes/themes/gruvbox_light.toml"]
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 500 
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "ComicShannsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "ComicShannsMono Nerd Font"
+style = "Bold"
