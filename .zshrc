@@ -1,5 +1,8 @@
 # JoelAlftberg .zshrc config
- 
+
+# https://donottrack.sh/
+export DO_NOT_TRACK=1
+
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -25,6 +28,7 @@ bindkey "^[[1;5D" 	backward-word
 bindkey "^[[H" 		beginning-of-line
 bindkey "^[[F" 		end-of-line
 bindkey "^[[3~" 	delete-char
+bindkey "^[[3;5~"	kill-word		
 
 # Use zoxide for faster directory traversal
 eval "$(zoxide init zsh)"
@@ -41,7 +45,9 @@ zstyle ':vcs_info:git:*' formats '( %b)'
 
 # Custom prompt
 setopt PROMPT_SUBST
-PROMPT='%F{cyan}joel%f%F{blue}󰣛 %f%F{green}%2~%f%F{yellow} ${vcs_info_msg_0_}%f  '
+PROMPT='%F{blue}joel%f%F{blue}󰣛 %f%F{green}%2~%f%F{yellow} ${vcs_info_msg_0_}%f '
 
 alias editrc="vi ~/.zshrc"
 alias reloadrc="source ~/.zshrc"
+alias vi="nvim"
+alias vim="nvim"
