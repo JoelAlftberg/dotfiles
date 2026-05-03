@@ -14,6 +14,7 @@ sudo dnf install -y \
 	pipewire-alsa \
 	pipewire-pulseaudio \
 	wireplumber \
+	input-remapper \
 	--setopt=install_weak_deps=false
 
 # Get utilities
@@ -82,10 +83,15 @@ install_plugin "nvim-cmp" "https://github.com/hrsh7th/nvim-cmp.git"
 install_plugin "cmp-nvim-lsp" "https://github.com/hrsh7th/cmp-nvim-lsp.git"
 install_plugin "nvim-treesitter" "https://github.com/nvim-treesitter/nvim-treesitter.git"
 install_plugin "nvim-dap" "https://github.com/mfussenegger/nvim-dap.git"
-install_plugin "plenary.nvim" "https://github.com/nvim-lua/plenary.nvim"
+install_plugin "plenary.nvim" "https://github.com/nvim-lua/popup.nvim"
+install_plugin "popup.nvim" "https://github.com/nvim-lua/plenary.nvim"
 install_plugin "telescope.nvim" "https://github.com/nvim-telescope/telescope.nvim"
 install_plugin "nvim-nio" "https://github.com/nvim-neotest/nvim-nio"
 install_plugin "nvim-dap-ui" "https://github.com/rcarriga/nvim-dap-ui"
+install_plugin "toggleterm.nvim" "https://github.com/akinsho/toggleterm.nvim.git"
+install_plugin "lualine.nvim" "https://github.com/nvim-lualine/lualine.nvim.git"
+install_plugin "auto-session" "https://github.com/rmagatti/auto-session.git"
+install_plugin "gitsigns.vim" "https://github.com/lewis6991/gitsigns.nvim.git"
 
 cd ~/.local/share/nvim/site/pack/plugins/start/nvim-treesitter/
 git checkout v0.9.3
