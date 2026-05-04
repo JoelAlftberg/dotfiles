@@ -51,3 +51,4 @@ alias editrc="vi ~/.zshrc"
 alias reloadrc="source ~/.zshrc"
 alias vi="nvim"
 alias vim="nvim"
+alias getidf='. $HOME/.espressif/tools/activate_idf_v6.0.1.sh && export PATH="$HOME/.espressif/tools/qemu-xtensa/esp_develop_9.2.2_20250817/qemu/bin:$PATH"'

@@ -22,6 +22,7 @@ sudo dnf install -y \
 	nvim \
 	tar \
 	wget \
+	nc \
 	git \
 	gh \
 	clang \

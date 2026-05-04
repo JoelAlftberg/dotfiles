@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprev<CR>')
+vim.opt.tabstop = 4      
+vim.opt.shiftwidth = 4  
+vim.opt.expandtab = true
 
 -- Session
 require('auto-session').setup({})
